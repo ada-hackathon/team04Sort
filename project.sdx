@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="hackathon04" location="/home/hackathon04/workspace/hackathon04" platform="/opt/Xilinx/SDx/2018.2/platforms/zcu102/zcu102.xpfm" platformUID="xilinx.com:zcu102:zcu102:1.0" systemProject="hackathon04_system" sysConfig="ocl" cpu="ocl" cpuInstance="" os="linux">
+  <configuration name="Debug" id="com.xilinx.sdx.sdsoc.opencl.config.debug.1005405839">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" hardwareOptimizationLevel="O_quick" target="hw" emulationToolchain="com.xilinx.sdx.sdsoc.opencl.toolchain.aarch64" hardwareToolchain="com.xilinx.sdx.sdsoc.opencl.toolchain.aarch64">
+      <binaryContainers name="binary_container_1">
+        <kernels name="merge" sourceFile="src/merge.cl"/>
+      </binaryContainers>
+      <sdsBuildOptions insertapm="false" gensdcard="true" dmclkid="1" enableHwSwTrace="false" traceApplication="false"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" emulationToolchain="com.xilinx.sdx.sdsoc.opencl.toolchain.aarch64" hardwareToolchain="com.xilinx.sdx.sdsoc.opencl.toolchain.aarch64">
+      <binaryContainers name="binary_container_1">
+        <kernels name="merge" sourceFile="src/merge.cl"/>
+      </binaryContainers>
+      <sdsBuildOptions insertapm="false" gensdcard="false" dmclkid="1" enableHwSwTrace="false" traceApplication="false" buildTarget="emulation"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.sdsoc.opencl.config.release.893700925" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw" emulationToolchain="com.xilinx.sdx.sdsoc.opencl.toolchain.aarch64" hardwareToolchain="com.xilinx.sdx.sdsoc.opencl.toolchain.aarch64">
+      <sdsBuildOptions insertapm="false" gensdcard="true" dmclkid="1" enableHwSwTrace="false" traceApplication="false"/>
+    </configBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>
